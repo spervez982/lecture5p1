@@ -1,10 +1,8 @@
-public class PayCalculator {
-    private double PayRate; //dollars per hour 
+package polymorphism;
 
-    public double computePay(double hours){
-        return hours * PayRate;
-
-            
-    }
-
-}
+public class RegularPay extends PayCalculator {
+    int test;
+    public RegularPay (double PayRate) {
+        this.PayRate = PayRate;
+       }
+   }
